@@ -1,0 +1,22 @@
+<h3>Current Articles</h3>
+<p>
+  <table style="width:">
+  <table style="width:30%">
+    <tr>
+      <td>Site</td>
+      <td>Site Address</td>
+      <td>Description</td>
+    </tr>
+    <tr><td> </td></tr>
+      <% article_list.each do |article| %>
+      <tr>
+        <td><%= article["title"] %></td>
+        <td><a href="<%= article["url"] %>"><%= article["url"] %></a></td>
+        <td><%= article["description"] %></td>
+      </tr>
+      <% end %>
+    </tr>
+  </table>
+</p>
+
+<a href='/new'>Submit New Article</a>
